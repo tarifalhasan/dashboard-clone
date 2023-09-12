@@ -2,8 +2,15 @@ import Features from "@/components/home/Features";
 import MonthlyProfit from "@/components/home/MonthlyProfit";
 import Orders from "@/components/home/Orders";
 import Profile from "@/components/home/Profile";
-import TotalSalesChats from "@/components/home/TotalSalesChats";
 import UpgradePro from "@/components/home/UpgradePro";
+import dynamic from "next/dynamic";
+// import TotalSalesChats from "@/components/home/TotalSalesChats";
+const TotalSalesChats = dynamic(
+  () => import("@/components/home/TotalSalesChats"),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   return (

@@ -86,7 +86,7 @@ const TotalSalesChats: React.FC<ApexChartProps> = () => {
   };
 
   return (
-    <div id="chart" className=" h-full bg-white rounded-md">
+    <div id="chart" className=" h-full p-4 bg-white rounded-md">
       <div>
         <h2 className=" ml-5 text-xl font-semibold">Total Sales</h2>
       </div>
