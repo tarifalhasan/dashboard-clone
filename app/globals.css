@@ -20,3 +20,45 @@ body {
   color: #000001;
   background: #f8f9fd;
 }
+
+.x-box {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  position: relative;
+  background: repeating-conic-gradient(
+    from 0deg,
+    #ec625e 0deg calc(3.6deg * 35),
+    #fe9617 calc(3.6deg * 35) calc(3.6deg * 70),
+    #22c0fd calc(3.6deg * 70) calc(3.6deg * 100)
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.x-content {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.x-box-cont {
+  font-size: 30px;
+  padding-left: 50px;
+}
+.x-box-cont h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.x-box-cont strong {
+  display: block;
+  margin-bottom: 15px;
+}

@@ -1,37 +1,12 @@
-"use client";
-
-import ReactApexChart from "react-apexcharts";
-
 const ApexPieChart = () => {
-  const state = {
-    series: [44, 55, 41, 17],
-    options: {
-      chart: {
-        type: "donut",
-      },
-      responsive: [
-        {
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 250,
-            },
-            legend: {
-              position: "bottom",
-            },
-          },
-        },
-      ],
-    },
-  };
-
   return (
     <div id="chart">
-      <ReactApexChart
-        options={state.options as any}
-        series={state.series}
-        type="donut"
-      />
+      <div className="x-box">
+        <div className="x-content flex-col">
+          <p className=" text-lg text-gray-500 font-normal">Total</p>
+          <h4 className=" text-2xl font-bold text-black">$2,500</h4>
+        </div>
+      </div>
     </div>
   );
 };
