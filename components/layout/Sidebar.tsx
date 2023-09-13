@@ -36,7 +36,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className=" hidden h-[calc(100%-2.5rem)] lg:flex w-20 fixed left-[1.5rem] top-[1.5rem] -bottom-[1.5rem]   flex-col  items-center  bg-white rounded-xl px-4 py-5 space-y-5">
+    <aside className=" z-50 hidden h-[calc(100%-2.5rem)] lg:flex w-20 fixed left-[1.5rem] top-[1.5rem] -bottom-[1.5rem]   flex-col  items-center  bg-white rounded-xl px-4 py-5 space-y-5">
       <Link href="/" className=" logo">
         <FaAngellist className=" bg-amber-500 text-white rounded-md text-5xl p-2" />
       </Link>

@@ -1,3 +1,4 @@
+import Navbar from "@/components/layout/Navbar";
 import Sidebar from "@/components/layout/Sidebar";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
@@ -20,7 +21,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className=" px-5 lg:px-6 py-6 flex items-start gap-6">
           <Sidebar />
-          <div className=" ml-0 lg:ml-28  lg:flex-1">{children}</div>
+          <div className=" ml-0 lg:ml-28  lg:flex-1">
+            <Navbar />
+
+            <div className=" pt-[4.5rem]">{children}</div>
+          </div>
         </main>
       </body>
     </html>
