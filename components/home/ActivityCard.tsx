@@ -14,16 +14,16 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
 }) => {
   return (
     <li className=" flex items-start gap-4">
-      <div
+      <span
         style={{ background: `${bgColor}` }}
         className=" w-14 h-14  rounded-lg grid place-items-center"
       >
         {icon}
-      </div>
-      <div className=" flex flex-col justify-between">
+      </span>
+      <span className=" flex flex-col justify-between">
         <h6 className=" text-base text-black font-medium">{title}</h6>
         <p className=" text-sm font-normal text-gray-400 ">{dec}</p>
-      </div>
+      </span>
     </li>
   );
 };

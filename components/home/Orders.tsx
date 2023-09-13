@@ -12,8 +12,8 @@ const Orders = () => {
       </div>
       <hr className=" h-[1px] bg-gray-100" />
       <div className="  px-4 py-10 w-full">
-        <ul className=" space-y-7 w-full ">
-          <li className=" flex items-center w-full justify-between">
+        <div className=" space-y-7 w-full ">
+          <div className=" flex items-center w-full justify-between">
             <ActivityCard
               bgColor="#FFF6EE"
               title="Basketball"
@@ -21,8 +21,8 @@ const Orders = () => {
               icon={<FaBasketballBall className="text-2xl  text-amber-300" />}
             />
             <h3 className=" text-2xl font-semibold  text-blue-600">$250</h3>
-          </li>
-          <li className=" flex items-center w-full justify-between">
+          </div>
+          <div className=" flex items-center w-full justify-between">
             <ActivityCard
               bgColor="#FFF5F4"
               title="Travel Bag"
@@ -30,8 +30,8 @@ const Orders = () => {
               icon={<FaShoppingBag className="text-2xl   text-blue-600" />}
             />
             <h3 className=" text-2xl font-semibold  text-blue-600">$250</h3>
-          </li>
-          <li className=" flex items-center w-full justify-between">
+          </div>
+          <div className=" flex items-center w-full justify-between">
             <ActivityCard
               bgColor="#EBF5FD"
               title="Dumble"
@@ -39,8 +39,8 @@ const Orders = () => {
               icon={<FcFlashAuto className="text-3xl  text-amber-300" />}
             />
             <h3 className=" text-2xl font-semibold  text-blue-600">$250</h3>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
